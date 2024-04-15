@@ -1,0 +1,44 @@
+# binary linear search
+l = eval(input("Enter value for insert"))
+lenght = len(l)
+value = int(input("enter element to be searched"))
+low = 0 
+high = length-1
+while(low <= high):
+	mid = (low + high) / 2
+	if value == l[mid]:
+		print("Element found at position", mid)
+		break
+	elif value < l[mid]:
+		high = mid-1
+	elif value > l[mid]:
+		low = mid+1
+	else:
+		print("Not found")
+
+# bubble sort
+
+l = eval(input("Enter value for insert"))
+lenght = len(l)
+for i in range(0, lenght):
+	for j in range(i+1, lenght):
+		if l[i] >= l[j]:
+			l[i], l[j] = l[j], l[i]
+
+print("Sorted list", l)
+
+
+# insertion sort
+
+l = eval(input("Enter value for insert"))
+lenght = len(l)
+for i in range(1, length):
+	pos = i - 1
+	temp = l[i]
+	while pos >= 0 and temp <= l[pos]:
+		l[pos + 1] = l[pos]
+		pos = pos - 1
+	l[pos+1] = temp
+print(l)
+
+

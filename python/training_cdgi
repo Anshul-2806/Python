@@ -1,0 +1,412 @@
+print("hello")
+a = 6   # 1878042896848
+b=7     # 1878042896880
+c=1*a   # 1878042896848
+d = 3.14
+e = "ansh"
+e1  ="a"
+print(type(a), type(d), type(e), type(e1))
+print(id(a), id(b), id(c))      # value ke according address provide krta hai
+
+a = {1,2,3,4,4}
+b = ["dog", "cat", "lion", 12]
+c = {
+    "fnm" : "john",
+    "lnm" : "Doe",
+    "age" : 32
+}
+d = ("abc", 12, 3.14, "xyz")
+print(type(a), type(b), type(c), type(d))
+
+# r = int(input("Enter radius"))
+# aoc = 3.14 * r * r
+# coc = 2 * 3.14 * r
+# print("Area of Circle is :", aoc, "Circumference of Circle is: ", coc)
+
+a = 2
+b = 4
+print("Before swapping", a,b)
+
+c = a
+a = b
+b = c
+print("After Swapping ", a,b)
+
+# direct swapping the two numbers
+a,b = 1,2
+print("Before swapping", a,b)
+a,b = b,a
+print("After Swapping ", a,b)
+
+# print('''-----
+#         Let's Play
+#         Rock ----- Paper ----- Scissor Game
+#         -------''')
+
+# nm1 = input("Enter player 1 name: ")
+# nm2 = input("Enter player 1 name: ")
+
+# print('''
+#     -------------
+#     for Rock    -> r or R
+#     for Scissor -> s or S
+#     for Paper   -> p or P
+
+#     Enter ur choioce also
+#     -------------
+# ''')
+# ch1 = input("Enter plyr 1 choice")
+# ch2 = input("Enter plyr 2 choice")
+# # for draw
+# if ch1 == ch2:
+#     print("DRAW!!")
+# # for rock -> ppr
+# elif (ch1=="r" or ch1=="R") and (ch2=="p" or ch2=="P"):
+#     print("PLAYER", nm2, "won ")
+# # rock -> scissor
+# elif (ch1=="r" or ch1=="R") and (ch2=="s" or ch2=="S"):
+#     print("PLAYER", nm2, "won")
+# # ppr -> scissor
+# elif (ch1=="p" or ch1=="P") and (ch2=="s" or ch2=="S"):
+#     print("PLAYER", nm2, "won")
+# elif (ch1=="p" or ch1=="P") and (ch2=="r" or ch2=="R"):
+#     print("PLAYER", nm1, "won ")
+# elif (ch1=="s" or ch1=="S") and (ch2=="r" or ch2=="R"):
+#     print("PLAYER", nm1, "won")
+# else:
+#     print("INVALID CHOICE !")
+
+
+
+
+
+# --------------------------------------------------------
+
+# # import random module
+# # print multiline instruction
+# # performstring concatenation of string
+# print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
+# 	+ "Rock vs Paper -> Paper wins \n"
+# 	+ "Rock vs Scissors -> Rock wins \n"
+# 	+ "Paper vs Scissors -> Scissor wins \n")
+
+# while True:
+	
+# 	print("Enter your choice \n 1 - Rock \n 2 - Paper \n 3 - Scissors \n")
+	
+# 	# take the input from user
+	
+# 	choice=int(input("Enter your choice :"))
+	
+# 	# OR is the short-circuit operator
+# 	# if any one of the condition is true
+# 	# then it return True value
+	
+# 	# looping until user enter invalid input
+# 	while choice > 3 or choice <1:
+# 	choice = int(input('Enter a valid choice please '))
+		
+# 		# initialize value of choice_name variable
+# 	# corresponding to the choice value
+# 	if choice == 1:
+# 		choice_name= 'Rock'
+# 	elif choice == 2:
+# 		choice_name= 'Paper'
+# 	else:
+# 		choice_name= 'Scissors'
+		
+# 		# print user choice
+# 	print('User choice is \n',choice_name)
+# 	print('Now its Computers Turn....')
+	
+# 	# Computer chooses randomly any number
+# 	# among 1 , 2 and 3. Using randint method
+# 	# of random module
+# 	comp_choice = random.randint(1,3)
+	
+# 	# looping until comp_choice value
+# 	# is equal to the choice value
+# 	while comp_choice == choice:
+# 		comp_choice = random.randint(1,3)
+		
+# 	# initialize value of comp_choice_name
+# 	# variable corresponding to the choice value
+# 	if comp_choice == 1:
+# 		comp_choice_name = 'rocK'
+# 	elif comp_choice == 2:
+# 		comp_choice_name = 'papeR'
+# 	else:
+# 		comp_choice_name = 'scissoR'
+# 	print("Computer choice is \n", comp_choice_name)
+# 	print(choice_name,'Vs',comp_choice_name)
+# 	# we need to check of a draw
+# 	if choice == comp_choice:
+# 		print('Its a Draw',end="")
+# 		result="DRAW"
+# 	# condition for winning	 
+# 	if (choice==1 and comp_choice==2):
+# 		print('paper wins =>',end="")
+# 		result='papeR'
+# 	elif (choice==2 and comp_choice==1):
+# 		print('paper wins =>',end="")
+# 		result='Paper'
+		
+	
+# 	if (choice==1 and comp_choice==3):
+# 		print('Rock wins =>\n',end= "")
+# 		result='Rock'
+# 	elif (choice==3 and comp_choice==1):
+# 		print('Rock wins =>\n',end= "")
+# 		result='rocK'
+		
+# 	if (choice==2 and comp_choice==3):
+# 		print('Scissors wins =>',end="")
+# 		result='scissoR'
+# 	elif (choice==3 and comp_choice==2):
+# 		print('Scissors wins =>',end="")
+# 		result='Rock'
+# 	# Printing either user or computer wins or draw
+# 	if result == 'DRAW':
+# 		print("<== Its a tie ==>")
+# 	if result == choice_name:
+# 		print("<== User wins ==>")
+# 	else:
+# 		print("<== Computer wins ==>")
+# 	print("Do you want to play again? (Y/N)")
+# 	# if user input n or N then condition is True
+# 	ans = input().lower
+# 	if ans =='n':
+# 		break
+# # after coming out of the while loop
+# # we print thanks for playing
+# print("thanks for playing")
+
+
+
+# -----------------------------------------------
+
+# print('''
+#         BUS TIMIMG APP 
+#         ----routes----
+#         1. Indore -> Dewas
+#         2. Dewas -> Indore
+#         3. Ujjain -> Bhopal
+# choose the route
+# ''')
+# route = int(input("Enter route of bus: like 1, 2, 3 : "))
+
+# if route==1:
+#     print("indore to dewas buses")
+#     print('''
+#         i. chamunda
+#         ii. om sai ram
+#         iii. verma
+#     ''')
+#     ch = input("Enter bus code to timimg :")
+#     if ch=='i':
+#         print("8:00am 10:00 am 12:00pm")
+#     elif ch=='ii':
+#         print("7:00am 9:00 am 11:00am")
+#     elif ch=='iii':
+#         print("8:00pm 10:00pm 12:00pm")
+#     else:
+#         print("no buses are avail on this routes....")
+
+# elif route==2:
+#     print("dewas to indore buses")
+#     print('''
+#         i. chamunda
+#         ii. hans
+#         iii. verma
+#     ''')
+#     ch = input("Enter bus code to timimg :")
+#     if ch=='ii':
+#         print("7:00am 9:00 am 11:00am")
+#     elif ch=='ii':
+#         print("7:00am 9:00 am 11:00am")
+#     elif ch=='iii':
+#         print("8:00pm 10:00pm 12:00pm")
+#     else:
+#         print("no buses are avail on this routes....")
+
+# elif route==3:
+#     print("ujjain to bhopal buses")
+#     print('''
+#         i. Shukla
+#         ii. royal
+#         iii. neo_go
+#     ''')
+#     ch = input("Enter bus code to timimg :")
+#     if ch=='iii':
+#         print("6:00am 12:00pm 6:00pm")
+#     elif ch=='ii':
+#         print("7:00am 9:00 am 11:00am")
+#     elif ch=='iii':
+#         print("8:00pm 10:00pm 12:00pm")
+#     else:
+#         print("no buses are avail on this routes....")
+# else:
+#     print("INVALID CHOICE !!!!")
+
+
+# ---------------------------------------------------
+
+
+# print('''
+#     RAJ's HOTEL 
+#     1. hotel rooms
+#     2. booking
+#     3. exit
+# ''')
+
+# ch = int(input("Enter ur choice "))
+# if ch==1:
+#     print('''
+#     1. single bed $500
+#     2. double bed $800
+#     3. delux room $1200
+#     ''')
+# elif ch==2:
+#     print("For booking the room")
+#     booking = input("Your choice")
+#     if booking == "y" or "Y":
+#         pass
+
+
+a = 'v'
+name = 'vishal'
+print(a in name)
+print(a not in name)
+
+# a = input("ENter a line")
+# b = input("Enter word")
+# print(b in a)
+
+for i in range(1,11):
+    print(i)
+
+# a = int(input("Enter start value"))
+# b = int(input("Enter stop value"))
+# for i in range(a, b+1):
+#     print(i)
+
+for i in range(1,11, 2):       # start stop gap
+    print(i, end = " ")
+
+print()
+
+nm = "asdfghjk"
+for i in nm:
+    print(i, end=" ")
+print()
+
+# print("Reverse order 10 to 1")
+# for i in range(10,0,-1):
+#     print(i)
+# for i in range(0,10,-1):
+    # print(i)
+
+
+
+# em = "abc@gmail.com"
+# ps = "abc123"
+# turn = 3
+# for i in range(0,3):
+#     email = input("Enter email")
+#     pswd = input("Enter password")
+#     if (email == 'abc@gmail.com') and (pswd == '123'):
+#         print("ur email is correct")
+#         break
+#     else:
+#         print("Incorrect ", 3-i, "left")
+
+# a = int(input("Enter start rnge"))
+# b = int(input("Enter stop range"))
+# ec = oc = 0
+
+# for i in range(a, b+1):
+#     if i%2==0:
+#         ec=ec+1
+#     else:
+#         oc=oc+1    
+# print("Even nmbrs", ec, "Odd nmbrs", oc)
+
+
+# num = int(input("Enter nmbr for prime or not"))
+# c=2
+# for i in range(2,num):
+#     if num%i == 0:
+#         c = c + 1
+
+# if c == 2:
+#     print("prime")
+# else:
+#     print("not prime")
+
+
+
+#  nested for loop
+
+for i in range(0,4):
+    for j in range(0,4):
+        print(j, end=" ")
+    print()
+
+print("Table from 1 to 10 ")
+for i in range(1,11):
+    for j in range(1,11):
+        print(i*j, end=" ")
+    print()
+
+print("Right angle triangle")
+for i in range(1,4):
+    for j in range(1,i+1):
+        print("*", end=" ")
+    print()
+
+print("opposite right angle triangle")
+for i in range(3):
+    for j in range(3-i):
+        print("*", end=" ")
+    print()
+
+# print("Prime num from given range")
+# start = int(input("Enter start range"))
+# stop = int(input("Enter stop range"))
+# for i in range(start, stop+1):
+#     c = 0
+#     for j in range(1, i+1):
+#         if i % j == 0:  # 10, 12, 
+#             c+=1
+#     if c==2:print(i, end=" ")
+
+# a,i = 10,1
+# while(a>5):
+#     print("hello")
+#     i+=1
+# print(i)
+
+l1 = [10,20,30,40]
+print(l1[1])
+l1[3] = 123
+print("Updated list : ",l1)
+print("Length of", l1, " is :", len(l1))
+lenght = len(l1)
+for i in range(lenght):
+    print(l1[i], end= " ")
+
+# l1 = list(input("Enter the element"))
+# print(l1)   # ['1', ' ', '2', ' ', '3', ' ', '4']  
+
+l1 = eval(input("Enter the element"))
+print(l1)
+
+
+# for i in range(len(l1)):
+#     if l1[i]%2==0:
+#         print("even numbers :", l1[i])
+rev = 0
+for i in range(0, len(l1)):
+    l1[i], len(l1) = len
+    
+print(l1)
