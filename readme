@@ -1,6 +1,46 @@
-python programming by Anshul
+👨‍💻 Author : Anshul Gupta
+📧 guptaanshul2806@gmail.com
+🌐 Founder – SparkQue Tech Solutions
 
-codes in python
-complete python in one file
-dsa using python
-stone, papepr, scissor code in python
+# 🐍 Python Mastery – Concepts, Code & Projects
+
+Welcome to **Python Mastery**, a comprehensive repository by **Anshul Gupta** covering key Python concepts with real-world code examples, graph plotting, and database integration.
+
+---
+
+## 🧠 What’s Inside
+
+This repository is structured for both beginners and intermediate learners. Here’s what you’ll find:
+
+### 📘 Core Python Concepts
+- Variables, Data Types, and Operators
+- Conditional Statements & Loops
+- Functions & Lambda Expressions
+- Lists, Tuples, Sets, Dictionaries
+- String Operations & File Handling
+- OOP: Classes, Objects, Inheritance
+
+### 🧪 Code & Examples
+- Practice problems with solutions
+- Real-world usage examples
+- Clean and well-commented code
+
+### 📊 Data Visualization
+- **Matplotlib**: Line, Bar, Pie, Histograms
+- **Seaborn**: Heatmaps, Pairplots, Distplots
+- Graph customization and styling
+
+### 🗄️ Database Connectivity
+- **PyMySQL** for connecting to MySQL
+- CRUD operations via Python
+- Secure DB connections using try-except blocks
+
+---
+
+---
+
+## 📌 Requirements
+
+```bash
+pip install matplotlib seaborn pymysql
+---
