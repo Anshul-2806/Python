@@ -1,10 +1,10 @@
-👨‍💻 Author : Anshul Gupta
-📧 guptaanshul2806@gmail.com
-🌐 Founder – SparkQue Tech Solutions
-
 # 🐍 Python Mastery – Concepts, Code & Projects
 
 Welcome to **Python Mastery**, a comprehensive repository by **Anshul Gupta** covering key Python concepts with real-world code examples, graph plotting, and database integration.
+<p align="center">
+  <img src="https://www.bing.com/images/search?view=detailV2&ccid=l1Fs266Q&id=4C16FE4FCFF000AB2C8C0E4E57D4B0C461CDB6E3&thid=OIP.l1Fs266QGwLJgyfWd2GZHAHaDe&mediaurl=https%3a%2f%2fmedia.geeksforgeeks.org%2fwp-content%2fuploads%2f20231223223806%2fSQL2.png&exph=470&expw=1000&q=sql&simid=608013266854151001&FORM=IRPRST&ck=8B8D45D0DE035103CD089E1413BC2D8C&selectedIndex=1&itb=0" alt="LeetCode SQL by Anshul Gupta" width="85%">
+</p>
+
 ---
 
 ## 🧠 What’s Inside
@@ -43,3 +43,6 @@ This repository is structured for both beginners and intermediate learners. Here
 ```bash
 pip install matplotlib seaborn pymysql
 ---
+## 👨‍💻 Author : Anshul Gupta
+📧 guptaanshul2806@gmail.com
+🌐 Founder – SparkQue Tech Solutions
